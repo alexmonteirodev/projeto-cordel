@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/*'Passion One'*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+/*'Sriracha'*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --font-family1: "Passion One", sans-serif;
+    --font-family2: "Sriracha", sans-serif;
+    --black: black;
+    --white: white;
+    --transparente: rgba(1, 1, 1, 0.166);
+}
+body{
+    background-color: gray;
+}
+header{
+    background-color: var(--black);
+    height: 25vw;
+}
+header>h1{
+    color: var(--white);
+    font-family: var(--font-family1);
+    font-weight:700;
+    font-size: 10vw;
+    text-align: center;
+    padding-top: 50px;
+}
+header>p{
+    color: var(--white);
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 50px; 
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2vw; 
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em; /*espaçamento entre linhas*/
+    font-family: var(--font-family2);
+    font-size: 3vw;
+    
+}
+section > p{
+    padding-bottom: 2em;
+}
+.normal{
+    background-color: var(--white);
+    color: var(--black);
+}
+.imagem{
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.426);
+    background-attachment: fixed; /*assim se faz o efeito --PARALAX--  */
+}
+.imagem>p{
+    background-color: var(--transparente);
+    display: inline-block; /*serve para o box/div se ajusar ao tamanho do conteudo. nesse caso, como o P é em vw e se ajusta ao tamanho da tela, se usasse a medida de px ele ia quebrar em algum momento e no inlineblock, ele vai se ajudar ao tamanho do P*/
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 2px 2px black; 
+}
+#img01{
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover; /*cover a imagem vai se adequar ao tamanho da tela*/
+}
+#img02{
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+footer{
+    background-color: var(--black);
+    text-align: center;
+    color: var(--white);
+    padding: 10px;
+}
